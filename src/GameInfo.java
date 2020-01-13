@@ -54,4 +54,13 @@ public class GameInfo {
         }
     }
 
+    public void resetInfo() {
+        score = 0;
+        comboMax = 0;
+
+        for(int curr : hitCount) { //TODO: hitCount가 0으로 설정 되는지 확인할 것
+            curr = 0;
+        }
+    }
+
 }
