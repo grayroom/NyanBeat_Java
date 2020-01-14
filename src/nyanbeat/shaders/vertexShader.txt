@@ -1,0 +1,13 @@
+// Vertex shader
+#version 110
+
+// vertex attributes
+attribute vec3 vertexData;
+attribute vec3 colorData;
+
+varying vec3 vertexColor;
+
+void main() {
+    vertexColor = colorData;
+    gl_Position = vec4(vertexData.xyz, 1.0);
+}
